@@ -1,0 +1,17 @@
+.joblist{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.item-font{
+    position: relative;
+}
+.salary{
+    position: absolute;
+    right:0.05rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f86e21;
+    font-size: 0.16rem;
+}

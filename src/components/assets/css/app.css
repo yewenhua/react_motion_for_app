@@ -1,0 +1,49 @@
+/*路由切换动画——左移动*/
+.left-enter {
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+.left-enter.left-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+}
+
+.left-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.left-leave.left-leave-active {
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+}
+
+/*路由切换动画——右移动*/
+.right-enter {
+    transform: translateX(-100%);
+}
+
+.right-enter.right-enter-active {
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+}
+
+.right-leave {
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.right-leave.right-leave-active {
+    opacity: 1;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out;
+}

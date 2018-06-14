@@ -1,0 +1,13 @@
+.content{
+    padding-top:  0.15rem;
+    padding-bottom: 0.15rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+p {
+    display: block;
+    -webkit-margin-before: 12px;
+    -webkit-margin-after: 12px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}

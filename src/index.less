@@ -8,27 +8,36 @@ body {
 #example, .container {
   height: 100%;
 }
-.body {
-  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
-  overflow: scroll;
+.item-font{
+  font-size: 0.16rem;
+  color: #424242;
 }
-.fixed-bottom {
-  position: fixed; bottom: 0; left: 0;
-  width: 100%; height: 70px;
-  background-color: #ddd;
+.my-list .spe .am-list-extra {
+  flex-basis: initial;
 }
-hr {
-  margin: 70px 10px;
+.am-list-item{
+  min-height: .5rem;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
 }
 
-// fix style
-.am-modal-content {
-  height: auto;
-  min-height: 100%;
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
 }
-// .am-popup-mask, .am-popup-wrap, .am-popup {
-//   position: absolute;
-// }
-.am-refresh-control-pull, .am-refresh-control-release {
-  justify-content: flex-start;
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
 }

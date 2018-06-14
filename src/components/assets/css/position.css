@@ -1,0 +1,60 @@
+.positionWraper{
+    background: white;
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.titleWraper{
+    background: white;
+    padding: 0.15rem;
+}
+.contentWraper{
+    padding: 0.15rem;
+    background: white;
+}
+.titleWraper .title{
+    font-size: 0.16rem;
+    color: #333;
+    padding-top: 0.05rem;
+    padding-bottom: 0.1rem;
+    font-weight:bold;
+}
+.titleWraper .monty{
+    font-size: 0.16rem;
+    color: #f86e21;
+    padding-top: 0.06rem;
+    padding-bottom: 0.06rem;
+}
+.titleWraper .time{
+    font-size: 0.13rem;
+    color: #bdbdbd;
+    padding-top: 0.06rem;
+    padding-bottom: 0.06rem;
+}
+.contentWraper .title{
+    font-size: 0.16rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.1rem;
+    color: #333;
+    border-bottom: 0.01rem solid #ddd;
+}
+.empty-ten{
+    background: #f4f4f4;
+    width:100%;
+    height: 0.08rem
+}
+.nodata{
+    height: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.nodata img{
+    margin: 0.3rem auto;
+    width: 70%;
+}
+.nodata .text{
+    font-size: 0.16rem;
+    color: #999;
+}

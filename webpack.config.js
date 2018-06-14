@@ -4,15 +4,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const pxtorem = require('postcss-pxtorem');
 
-const Visualizer = require('webpack-visualizer-plugin'); // remove it in production environment.
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; // remove it in production environment.
+//const Visualizer = require('webpack-visualizer-plugin'); // remove it in production environment.
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; // remove it in production environment.
 const otherPlugins = process.argv[1].indexOf('webpack-dev-server') >= 0 ? [] : [
-  new Visualizer(), // remove it in production environment.
-  new BundleAnalyzerPlugin({
-    defaultSizes: 'parsed',
-    // generateStatsFile: true,
-    statsOptions: { source: false }
-  }), // remove it in production environment.
+  //new Visualizer(), // remove it in production environment.
+  //new BundleAnalyzerPlugin({
+    //defaultSizes: 'parsed',
+    //// generateStatsFile: true,
+    //statsOptions: { source: false }
+  //}), // remove it in production environment.
 ];
 
 module.exports = {
@@ -26,8 +26,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
-    path: path.join(__dirname, '/dist'),
-    publicPath: '/dist/'
+    path: path.join(__dirname, './dist'),
+    publicPath: './dist/'
   },
 
   resolve: {
@@ -57,7 +57,7 @@ module.exports = {
               presets: ['es2015', 'react']
           }
       },
-      { test: /\.(jpg|png)$/, loader: "url?limit=8192" },
+      { test: /\.(jpg|png)$/, loader: "url?limit=8192&name=assets/img/[name].[ext]" },
       // svg-sprite for antd-mobile@1.0
       { test: /\.(svg)$/i, loader: 'svg-sprite', include: [
         require.resolve('antd-mobile').replace(/warn\.js$/, ''),  // 1. 属于 antd-mobile 内置 svg 文件
@@ -84,6 +84,9 @@ module.exports = {
       // minChunks: 2,
       name: 'shared',
       filename: 'shared.js'
+    }),
+    new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
     }),
     new ExtractTextPlugin('[name].css', { allChunks: true }),
     ...otherPlugins

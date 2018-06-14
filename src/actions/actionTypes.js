@@ -1,3 +1,7 @@
 //counter action types
 export const COUNTER_INCREMENT = 'COUNTER_INCREMENT'
 export const COUNTER_DOUBLE_ASYNC = 'COUNTER_DOUBLE_ASYNC'
+
+export const UPDATE_BASE_URL = 'UPDATE_BASE_URL'
+export const UPDATE_API_URL = 'UPDATE_API_URL'
+export const UPDATE_TOKEN = 'UPDATE_TOKEN'

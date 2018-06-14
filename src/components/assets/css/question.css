@@ -1,0 +1,58 @@
+.content{
+    padding-top:  0.15rem;
+    padding-bottom: 0.15rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.my-accordion .pad .am-accordion-content-box {
+    padding: 0.1rem;
+}
+.my-accordion .my-list .am-list-body {
+    border-top: 0;
+}
+.my-accordion .my-list .am-list-body:after {
+    border-bottom: 0;
+}
+.am-list-header {
+     padding: 0.1rem 0.15rem;
+     font-size: 0.15rem;
+     color: #888;
+     display: inline-block;
+     width: 100%;
+     box-sizing: border-box;
+}
+.am-list-header-question {
+    padding: 0.05rem 0.15rem 0.08rem 0.15rem;
+    font-size: 0.14rem;
+    color: #888;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.my-accordion .pad .am-accordion-content-box{
+    padding: 0.1rem 0.15rem;
+    color: #999;
+    line-height: 0.18rem;
+}
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box{
+    color: #999;
+}
+
+.am-accordion .am-accordion-item .am-accordion-header i {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+}
+.am-accordion .am-accordion-item .am-accordion-header{
+    line-height: 0.6rem;
+    height: 0.6rem;
+    color: #424242;
+    font-size: .16rem;
+}
+.am-accordion .am-accordion-item .am-accordion-header i{
+    top: 0.23rem;
+}
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box{
+    font-size: .14rem;
+}

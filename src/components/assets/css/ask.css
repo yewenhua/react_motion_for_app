@@ -1,0 +1,13 @@
+.am-textarea-control textarea{
+    font-size: 0.16rem;
+}
+.am-list-item .am-input-control input{
+    font-size: .16rem;
+}
+.am-button-primary{
+    background-color: #4285F4;
+    border: 1px solid #4285F4;
+}
+.am-button-primary.am-button-active{
+    background-color: #2670eb;
+}

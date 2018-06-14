@@ -1,0 +1,43 @@
+.my-carousel-about {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.my-carousel-about div.img-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.my-carousel-about div.img-content img {
+    width: 100%;
+    height: 100%;
+}
+.slider-decorator-0{
+    padding-bottom: 0.2rem;
+}
+.about-page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.page-dots{
+    position: absolute;
+    left: 0px;
+    bottom: 0.2rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.slider-frame{
+    height: 100%;
+}
+.slider-list{
+    height: 100%;
+}
+.img-content img{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
